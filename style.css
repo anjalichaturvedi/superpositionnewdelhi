@@ -2,6 +2,7 @@ body {
   margin: 0px
   color: black;
   font-family: 'Poppins', sans-serif;
+  font-size:10vw;
 }
 
 a:link, a:visited {
@@ -12,6 +13,10 @@ a:link, a:visited {
 a:hover {
   text-decoration: underline;
   color: #A67BD4;
+}
+
+img {
+  max-width:100%;
 }
 
 .nav {
@@ -83,6 +88,22 @@ a:hover {
  border-radius: 15px;
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+@media (max-width: 1100px) {
+   .header {width: 100%;}
+ }
+
+ @media (max-width: 500px) {
+    .header img {width: 40%;}
+  }
+
+/** @media (min-width:768px) {
+  body {font-size:1.2rem;}
+}
+@media (min-width:1100px) {
+  body {font-size:1.5rem;}
+}
+**/
 
 .mission {
   font-family: 'Poppins', sans-serif;
