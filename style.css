@@ -25,8 +25,8 @@ img {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%;
   background-color: #EADBFA;
+  width: 100%
 }
 
 .nav img {
@@ -52,6 +52,12 @@ img {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 760px) {
+  .header img {
+    display: none;
+  }
+}
+
 .header h1{
   margin-top: 140px;
   margin-left: 200px;
@@ -61,6 +67,15 @@ img {
   font-weight: bold;
 }
 
+@media screen and (max-width: 800px) {
+  .header h1 {
+    margin-top: 120px;
+    font-size: 40px;
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+
 .header h4{
   margin-top: 20px;
   font-weight: lighter;
@@ -68,6 +83,12 @@ img {
   font-family: 'Poppins', sans-serif;
   margin-right: 90px;
   font-size: 17px;
+}
+
+@media screen and (max-width: 800px) {
+  .header h4 {
+    display: none;
+  }
 }
 
 .header button {
@@ -89,6 +110,13 @@ img {
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+@media screen and (max-width: 800px) {
+  .header button {
+    margin-left: 80px;
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 1100px) {
    .header {width: 100%;}
  }
@@ -96,14 +124,6 @@ img {
  @media (max-width: 500px) {
     .header img {width: 40%;}
   }
-
-/** @media (min-width:768px) {
-  body {font-size:1.2rem;}
-}
-@media (min-width:1100px) {
-  body {font-size:1.5rem;}
-}
-**/
 
 .mission {
   font-family: 'Poppins', sans-serif;
@@ -123,9 +143,23 @@ img {
   font-size: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  .mission p {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+}
+
 .row {
   margin-top: 80px;
   font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .col-sm {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
 }
 
 .col-sm h4 {
@@ -152,14 +186,35 @@ img {
 }
 
 .eventbox {
-    background-color: white;
-    width: 500px;
+  background-color: white;
+  width: 500px;
   height: 200px;
   box-sizing: border-box;
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
   color: #A67BD4;
-margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .eventbox {
+    width: 310px;
+    height: 230px;
+  }
+}
+
+#eventbox1 {
+  margin-left:200px;
+  text-align: center;
+  float:left;
+}
+
+@media screen and (max-width: 800px) {
+  #eventbox1 {
+    margin-left: 30px;
+    margin-right: 20px;
+    height: 250px;
+  }
 }
 
 .eventbox button {
@@ -185,6 +240,13 @@ margin-bottom: 50px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .partner h3 {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
 }
 
 .partner button {
